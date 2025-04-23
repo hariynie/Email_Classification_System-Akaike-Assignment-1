@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Type detection Result</title>
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* 🔷 Top Banner Styling */
+        .top-banner {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .top-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .btn-home-banner {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ffffff;
+            color: #007bff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        body {
+        background: url('https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+    }
+
+        .btn-home-banner:hover {
+            background-color: #e2e6ea;
+            color: #0056b3;
+        }
+
+        /* 📦 Result Box */
+        .jumbotron {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔷 Top Banner -->
+    <div class="top-banner">
+        <h1>Email Type Detection</h1>
+        <a href="{{ url_for('home') }}" class="btn-home-banner">🏠 Home</a>
+    </div>
+
+    <h3 class="text-center text-primary mt-4">Result for your input!</h3>
+
+    <div class="jumbotron">
+   
+            <h1 class="text-success text-center display-4"><b>It’s a {{prediction}} mail! 📬 🙂 ✅</b></h1>
+     
+    </div>
+
+</body>
+</html>

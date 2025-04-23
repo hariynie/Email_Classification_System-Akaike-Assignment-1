@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Type Classification</title>
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header-section {
+            background-color: #007bff; /* Bootstrap Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 700px;
+            margin: 30px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .form-controller {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-sumbit {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+        }
+        body {
+        background: url('https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+    }
+
+        .btn-sumbit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Blue Header Section -->
+    <div class="header-section">
+        <h2>Email Type Detection</h2>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-container">
+      <form id="contact-form" action="/predict" method="post">
+            <div class="row">
+                 
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <textarea class="form-controller" id="form_message" name="comment"
+                            placeholder=" EMail Type Checking here"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-default btn-sumbit"><span>Send</span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
