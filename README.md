@@ -32,13 +32,13 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/hariynie/Emsil_Classification_System-Akaike-Assignment-1.git
+git clone https://github.com/hariynie/Email_Classification_System-Akaike-Assignment-1.git
 Navigate to the project directory:
 
 bash
 Copy
 Edit
-cd Emsil_Classification_System-Akaike-Assignment-1
+cd Email_Classification_System-Akaike-Assignment-1
 Install the required libraries:
 
 bash
